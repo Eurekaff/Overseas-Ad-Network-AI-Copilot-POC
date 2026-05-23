@@ -1,0 +1,7 @@
+node_modules/
+dist/
+verification-*.png
+.env
+.env.local
+npm-debug.log*
+
