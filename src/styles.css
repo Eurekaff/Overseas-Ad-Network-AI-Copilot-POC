@@ -544,7 +544,7 @@ nav {
 }
 
 .metricGrid {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .metric {
@@ -640,6 +640,201 @@ td {
 .reportPanel {
   display: grid;
   gap: 14px;
+}
+
+.rulePanel {
+  border-left: 4px solid #0f766e;
+}
+
+.ruleSteps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.ruleSteps div {
+  padding: 14px;
+  background: #f5f8f2;
+  border: 1px solid #dbe3d8;
+  border-radius: 8px;
+}
+
+.ruleSteps span {
+  display: inline-grid;
+  place-items: center;
+  width: 28px;
+  height: 25px;
+  margin-bottom: 10px;
+  color: #0f5c3d;
+  background: #dff5ed;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.ruleSteps strong {
+  display: block;
+  margin-bottom: 7px;
+}
+
+.ruleSteps p,
+.fitPanel li,
+.recentResult p {
+  margin: 0;
+  color: #43514b;
+  line-height: 1.55;
+  font-size: 13px;
+}
+
+.fitPanel {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+}
+
+.fitPanel ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 19px;
+}
+
+.noAuto {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 12px;
+  color: #704311;
+  background: #fff1d8;
+  border: 1px solid #f0d09d;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.actionBar {
+  display: grid;
+  gap: 10px;
+  margin-top: 4px;
+  padding-top: 14px;
+  border-top: 1px solid #e0e5dd;
+}
+
+.actionBar > strong {
+  font-size: 13px;
+}
+
+.actionBar > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.action {
+  min-height: 36px;
+  padding: 0 11px;
+  color: #20302b;
+  background: #ffffff;
+  border: 1px solid #d5ddd2;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.action.primary {
+  color: #10211e;
+  background: #e2ff63;
+  border-color: #c4e138;
+}
+
+.spread {
+  justify-content: space-between;
+}
+
+.titleInline {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.titleInline h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.mockTag {
+  padding: 5px 9px;
+  color: #48615a;
+  background: #edf2ea;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.valueGrid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.valueGrid div {
+  padding: 12px;
+  display: grid;
+  gap: 7px;
+  background: #f6f8f3;
+  border: 1px solid #dbe2d8;
+  border-radius: 8px;
+}
+
+.valueGrid span {
+  color: #66736d;
+  font-size: 12px;
+}
+
+.valueGrid strong {
+  font-size: 21px;
+}
+
+.valueGrid em {
+  color: #0f5c3d;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.principleList {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.principleList div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 54px;
+  padding: 10px;
+  background: #f4f7f0;
+  border: 1px solid #d7dfd5;
+  border-radius: 8px;
+}
+
+.principleList span {
+  display: grid;
+  place-items: center;
+  width: 27px;
+  height: 27px;
+  flex: none;
+  color: #10211e;
+  background: #e2ff63;
+  border-radius: 6px;
+  font-weight: 800;
+}
+
+.recentResult {
+  display: grid;
+  align-content: start;
+  gap: 12px;
 }
 
 .summary {
@@ -875,7 +1070,10 @@ textarea {
   .metricGrid,
   .statGrid,
   .copilotOutput,
-  .controlPanel {
+  .controlPanel,
+  .valueGrid,
+  .ruleSteps,
+  .principleList {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -916,7 +1114,10 @@ textarea {
   .metricGrid,
   .statGrid,
   .copilotOutput,
-  .controlPanel {
+  .controlPanel,
+  .valueGrid,
+  .ruleSteps,
+  .principleList {
     grid-template-columns: 1fr;
   }
 

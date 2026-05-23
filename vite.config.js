@@ -24,7 +24,7 @@ function extractJson(text) {
 
 function buildPrompt(payload) {
   return [
-    "You are an AI copilot for an overseas ad network B2B SaaS POC.",
+    "You are an embedded AI assistant inside overseas ad network business workflows.",
     "Return strict JSON only. Do not include markdown fences.",
     "The JSON schema is:",
     JSON.stringify({
@@ -39,7 +39,8 @@ function buildPrompt(payload) {
     "- Use the requested locale.",
     "- Ground every conclusion in the provided metrics and evidence.",
     "- Do not claim that high-risk actions have been automatically executed.",
-    "- Keep recommendations specific and suitable for a 10-minute product demo.",
+    "- Explain results after rule detection and metric decomposition; do not present AI as an autonomous platform.",
+    "- Keep recommendations specific and suitable for a 5-minute product demo.",
     "Context:",
     JSON.stringify(payload, null, 2)
   ].join("\n");
@@ -77,7 +78,7 @@ function qwenMiddleware(env) {
           messages: [
             {
               role: "system",
-              content: "You generate structured ad network diagnosis reports for product demos."
+              content: "You generate evidence-grounded assisted explanations for embedded ad network workflows."
             },
             {
               role: "user",
@@ -127,4 +128,3 @@ export default defineConfig(({ mode }) => {
     ]
   };
 });
-

@@ -9,7 +9,7 @@
 - Overview
 - Advertiser Diagnosis
 - Developer Diagnosis
-- Operation Copilot
+- Operations Workbench + AI Report Assistance
 - Follow-up Tracker
 
 ## 2. 全局组件
@@ -41,7 +41,7 @@
 - Overview
 - Advertiser Diagnosis
 - Developer Diagnosis
-- Operation Copilot
+- Operations Workbench + AI Report Assistance
 - Follow-up Tracker
 
 ## 3. Overview
@@ -59,7 +59,7 @@
 
 避免做成营销首页，应保持数据平台风格。
 
-## 4. Advertiser Diagnosis
+## 4. Advertiser Dashboard + AI Anomaly Explanation
 
 目标：演示广告主 CPA 上升 / ROAS 下降诊断。
 
@@ -101,7 +101,7 @@
    - 暂不采纳
    - 需要人工复核
 
-## 5. Developer Diagnosis
+## 5. Developer Revenue Dashboard + AI Variance Analysis
 
 目标：演示开发者激励视频广告收入下降诊断。
 
@@ -145,7 +145,7 @@
    - 暂不采纳
    - 需要人工复核
 
-## 6. Operation Copilot
+## 6. Operations Workbench + AI Report Assistance
 
 目标：演示内部团队提效，不做成单纯聊天框。
 
@@ -200,9 +200,8 @@
    - 改善中的指标数量
    - 仍需复核的问题数量
 
-## 8. 10 分钟演示重点
+## 8. 5 分钟演示重点
 
 页面不应追求功能数量，而应让演示路径非常顺：
 
-Overview -> Advertiser Diagnosis -> Follow-up -> Developer Diagnosis -> Operation Copilot -> Language Switch。
-
+Flow Overview -> Advertiser Dashboard + AI Anomaly Explanation -> Follow-up -> Developer Revenue Dashboard + AI Variance Analysis -> Operations Workbench + AI Report Assistance -> Value Metrics。
