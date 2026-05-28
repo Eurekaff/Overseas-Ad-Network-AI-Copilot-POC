@@ -84,9 +84,31 @@ npm install
 npm run dev
 ```
 
-构建检查：
+如需连接 Qwen 生成真实辅助诊断，可在 `.env.local` 配置本地开发代理：
 
 ```bash
+QWEN_API_KEY=your_api_key
+# 可选：QWEN_MODEL=qwen-plus
+# 可选：QWEN_BASE_URL=https://dashscope.aliyuncs.com/compatible-mode/v1
+```
+
+未配置密钥或生成失败时，界面会明确提示并回退到可演示的模拟辅助结果。
+
+## 代码结构
+
+本轮标准化重构将业务逻辑、模型适配和展示层拆开，便于测试与后续迭代：
+
+- `src/domain/`：模拟数据、诊断规则、报告上下文与纯计算逻辑。
+- `src/services/`：浏览器端调用 `/api/qwen-diagnosis` 的请求边界。
+- `server/qwen/`：提示词、严格 JSON 解析、Qwen provider 与 Vite 本地中间件。
+- `src/app/`、`src/features/`、`src/components/`：应用壳、五个业务页面与共享 UI。
+- `src/styles.css`：选定的明亮运营控制台视觉系统与响应式布局。
+
+## 质量检查
+
+```bash
+npm run lint
+npm run test
 npm run build
 ```
 

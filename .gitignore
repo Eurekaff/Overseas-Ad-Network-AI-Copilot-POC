@@ -1,7 +1,8 @@
 node_modules/
 dist/
+.worktrees/
+.superpowers/
 verification-*.png
 .env
 .env.local
 npm-debug.log*
-
